@@ -44,7 +44,7 @@ This repository contains all the projects completed during my Data Science inter
 #### Project 2: Linear Regression
 - **Objective:** Build a linear regression model to predict sales based on advertising spend
 - **Skills:** Regression analysis, Python, Scikit-learn
-- **Status:** [🔄 In Progress]
+- **Status:** [✅ Completed]
 - [View Project](./Level_1_Beginner/Project_2_Linear_Regression/)
 
 ### Level 2 Projects
@@ -52,7 +52,7 @@ This repository contains all the projects completed during my Data Science inter
 #### Project 3: Titanic EDA
 - **Objective:** Perform exploratory data analysis on the Titanic dataset
 - **Skills:** Data wrangling, visualization (Seaborn, Matplotlib), statistics
-- **Status:** [📅 Planned]
+- **Status:** [🔄 In Progress]
 - [View Project](./Level_2_Intermediate/Project_3_Titanic_EDA/)
 
 #### Project 4: Titanic Classification
