@@ -38,13 +38,13 @@ This repository contains all the projects completed during my Data Science inter
 #### Project 1: Sales Data Analysis
 - **Objective:** Analyze retail store sales data with descriptive statistics and visualizations
 - **Skills:** Data cleaning, basic statistics, visualization with Excel/Python
-- **Status:** [Status]
+- **Status:** [✅ Completed]
 - [View Project](./Level_1_Beginner/Project_1_Sales_Data_Analysis/)
 
 #### Project 2: Linear Regression
 - **Objective:** Build a linear regression model to predict sales based on advertising spend
 - **Skills:** Regression analysis, Python, Scikit-learn
-- **Status:** [Status]
+- **Status:** [🔄 In Progress]
 - [View Project](./Level_1_Beginner/Project_2_Linear_Regression/)
 
 ### Level 2 Projects
@@ -52,13 +52,13 @@ This repository contains all the projects completed during my Data Science inter
 #### Project 3: Titanic EDA
 - **Objective:** Perform exploratory data analysis on the Titanic dataset
 - **Skills:** Data wrangling, visualization (Seaborn, Matplotlib), statistics
-- **Status:** [Status]
+- **Status:** [📅 Planned]
 - [View Project](./Level_2_Intermediate/Project_3_Titanic_EDA/)
 
 #### Project 4: Titanic Classification
 - **Objective:** Build a logistic regression model to predict Titanic survival
 - **Skills:** Classification, model evaluation, feature engineering
-- **Status:** [Status]
+- **Status:** [📅 Planned]
 - [View Project](./Level_2_Intermediate/Project_4_Titanic_Classification/)
 
 ### Level 3 Projects
@@ -66,13 +66,13 @@ This repository contains all the projects completed during my Data Science inter
 #### Project 5: Stock Price Forecasting
 - **Objective:** Create time series forecasting models (ARIMA/LSTM) for stock price prediction
 - **Skills:** Time series analysis, ARIMA, LSTM models
-- **Status:** [Status]
+- **Status:** [📅 Planned]
 - [View Project](./Level_3_Advanced/Project_5_Stock_Price_Forecasting/)
 
 #### Project 6: Sentiment Analysis
 - **Objective:** Perform sentiment analysis on social media data
 - **Skills:** NLP, sentiment analysis (NLTK/TextBlob), data cleaning
-- **Status:** [Status]
+- **Status:** [📅 Planned]
 - [View Project](./Level_3_Advanced/Project_6_Sentiment_Analysis/)
 
 ---

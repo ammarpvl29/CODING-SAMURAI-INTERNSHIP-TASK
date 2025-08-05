@@ -1,0 +1,30 @@
+# Core Data Science Libraries
+pandas
+numpy
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+joblib
+
+# Jupyter Notebook
+jupyter
+notebook
+ipykernel
+
+# Data Handling
+openpyxl  # For Excel file support
+xlrd    # For reading Excel files
+
+# Utilities
+python-dateutil
+pytz
+
+# Visualization Enhancement
+plotly   # Optional: for interactive plots
+
+# Development Tools
+black    # Code formatting
+pylint   # Code linting
+pytest   # Testing

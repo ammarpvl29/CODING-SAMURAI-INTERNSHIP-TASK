@@ -1,91 +1,158 @@
-# Project 1: Simple Data Analytics - Sales Data Analysis
+# Sales Data Analysis Project
 
-## 📊 Project Overview
+**Project:** Global Electronics Retailer Dataset Analysis  
+**Author:** Ammar Siregar  
+**Internship:** Coding Samurai  
+**Level:** 1 - Beginner  
 
-This project focuses on analyzing retail store sales data to extract meaningful insights through descriptive statistics and visualizations.
+## Project Overview
 
-## 🎯 Objectives
+This project analyzes sales data from a global electronics retailer to uncover business insights, trends, and performance metrics. The analysis includes customer behavior, product performance, geographic distribution, and temporal patterns.
 
-- Clean and prepare sales data for analysis
-- Calculate descriptive statistics (mean, median, mode, etc.)
-- Create informative visualizations (bar charts, pie charts, line graphs)
-- Identify sales trends and patterns
-- Generate actionable business insights
+## Dataset Description
 
-## 📁 Project Structure
+The project uses six main datasets:
+
+- **Sales.csv** (62,884 records): Core transaction data with order details
+- **Customers.csv** (15,266 records): Customer demographic information
+- **Products.csv** (2,517 records): Product catalog with pricing information
+- **Stores.csv** (67 records): Store location and details
+- **Exchange_Rates.csv** (11,215 records): Currency conversion rates
+- **Data_Dictionary.csv** (37 records): Field descriptions and metadata
+
+## Project Structure
 
 ```
 Project_1_Sales_Data_Analysis/
 │
 ├── data/
-│   ├── raw/              # Original data files
-│   └── processed/        # Cleaned data files
+│   ├── raw/                          # Original data files
+│   │   ├── Customers.csv
+│   │   ├── Products.csv
+│   │   ├── Sales.csv
+│   │   ├── Stores.csv
+│   │   ├── Exchange_Rates.csv
+│   │   └── Data_Dictionary.csv
+│   └── processed/                    # Cleaned and processed data
+│       ├── customers_cleaned.csv
+│       ├── products_cleaned.csv
+│       ├── sales_cleaned.csv
+│       ├── stores_cleaned.csv
+│       ├── exchange_rates_cleaned.csv
+│       ├── sales_analysis_complete.csv
+│       ├── analysis_summary.csv
+│       ├── category_performance.csv
+│       ├── top_products.csv
+│       ├── top_customers.csv
+│       ├── store_performance.csv
+│       ├── data_cleaning_summary.csv
+│       └── business_insights.txt
 │
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   └── 03_analysis_visualization.ipynb
+│   ├── 01_data_exploration.ipynb     # Initial data exploration
+│   ├── 02_data_cleaning.ipynb        # Data cleaning and preparation
+│   └── 03_analysis_visualization.ipynb # Analysis and visualizations
 │
 ├── scripts/
-│   ├── data_cleaning.py
-│   └── visualization.py
+│   ├── data_cleaning.py              # Data cleaning functions
+│   └── visualization.py              # Visualization functions
 │
 ├── visualizations/
-│   ├── sales_by_category.png
-│   ├── monthly_trends.png
-│   └── revenue_distribution.png
+│   ├── sales_by_category.png         # Revenue by product category
+│   ├── monthly_trends.png            # Monthly sales trends
+│   ├── revenue_distribution.png      # Revenue distribution analysis
+│   ├── top_products.png              # Top performing products
+│   ├── sales_dashboard.png           # Comprehensive dashboard
+│   └── [other generated charts]
 │
-├── requirements.txt
-└── README.md
+├── sales_analysis.py                 # Original monolithic script (deprecated)
+└── README.md                         # Project documentation
 ```
 
-## 🔧 Technologies Used
+## Key Features
 
-- Python 3.x
-- Pandas - Data manipulation
-- NumPy - Numerical operations
-- Matplotlib - Basic plotting
-- Seaborn - Statistical visualizations
-- Jupyter Notebook - Interactive development
+### 📊 Data Analysis Capabilities
+- **Revenue Analysis**: Total revenue, profit margins, and growth trends
+- **Product Performance**: Top products, category analysis, brand performance
+- **Customer Insights**: Demographics, purchasing behavior, top customers
+- **Geographic Analysis**: Performance by country and store locations
+- **Temporal Patterns**: Seasonal trends, monthly/quarterly performance
 
-## 📈 Analysis Performed
+### 🧹 Data Processing
+- **Data Cleaning**: Handle missing values, format inconsistencies
+- **Data Integration**: Merge multiple datasets for comprehensive analysis
+- **Feature Engineering**: Create calculated fields (profit, margins, age groups)
+- **Data Validation**: Ensure data quality and consistency
 
-1. **Data Cleaning**
-   - Handle missing values
-   - Remove duplicates
-   - Format data types
+### 📈 Visualizations
+- **Category Performance**: Bar charts and pie charts
+- **Time Series**: Monthly and quarterly trends
+- **Geographic Maps**: Revenue distribution by location
+- **Customer Demographics**: Age and gender analysis
+- **Profitability Analysis**: Margin analysis across dimensions
 
-2. **Descriptive Statistics**
-   - Sales summary statistics
-   - Product category analysis
-   - Time-based analysis
+## Getting Started
 
-3. **Visualizations Created**
-   - Sales by product category (Bar chart)
-   - Revenue distribution (Pie chart)
-   - Monthly sales trends (Line graph)
-   - Top performing products
-   - Sales by region/store
+### Prerequisites
 
-## 🚀 How to Run
+```bash
+pip install pandas numpy matplotlib seaborn plotly jupyter
+```
 
-1. Clone the repository
-2. Navigate to the project directory
-3. Install requirements: `pip install -r requirements.txt`
-4. Run Jupyter notebooks in order (01, 02, 03)
+### Usage
 
-## 📊 Key Findings
+1. **Data Exploration**: Start with `01_data_exploration.ipynb`
+   - Load and examine raw data
+   - Understand data structure and quality
+   - Identify data issues and patterns
 
-[To be updated after analysis]
+2. **Data Cleaning**: Run `02_data_cleaning.ipynb`
+   - Clean and preprocess all datasets
+   - Handle missing values and format issues
+   - Create integrated analysis dataset
 
-- Finding 1: 
-- Finding 2: 
-- Finding 3: 
+3. **Analysis & Visualization**: Execute `03_analysis_visualization.ipynb`
+   - Perform comprehensive business analysis
+   - Generate insights and recommendations
+   - Create visualizations and dashboard
 
-## 👤 Author
+### Alternative Usage
+
+You can also use the modular scripts:
+
+```python
+# Import cleaning functions
+from scripts.data_cleaning import *
+
+# Import visualization functions
+from scripts.visualization import *
+
+# Load and clean data
+customers = load_customers_data('data/raw/Customers.csv')
+products = load_products_data('data/raw/Products.csv')
+
+# Create visualizations
+create_category_revenue_chart(sales_df, save_path='visualizations/categories.png')
+```
+
+## Technologies Used
+
+- **Python**: Core programming language
+- **Pandas**: Data manipulation and analysis
+- **NumPy**: Numerical computing
+- **Matplotlib/Seaborn**: Static visualizations
+- **Plotly**: Interactive visualizations
+- **Jupyter Notebooks**: Interactive development environment
+
+## Author
 
 **Ammar Siregar**  
-Data Science Intern at Coding Samurai  
+Coding Samurai Internship Program  
+Level 1 - Beginner Project
+
+---
+
+*This project demonstrates comprehensive data analysis skills including data cleaning, exploratory analysis, statistical analysis, and business intelligence reporting.*
 [www.linkedin.com/in/ammar-pavel-zamora-siregar-788109187] | [ammarpvl@student.telkomuniversity.ac.id]
 
 ---
