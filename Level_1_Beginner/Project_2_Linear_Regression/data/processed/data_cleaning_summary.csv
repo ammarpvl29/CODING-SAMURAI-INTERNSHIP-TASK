@@ -1,0 +1,7 @@
+Dataset,Records,Columns,Missing Values
+Customers,15266,10,10
+Products,2517,10,0
+Sales,62884,9,49719
+Stores,67,5,0
+Exchange Rates,11215,3,0
+Sales Analysis,62884,44,99468
